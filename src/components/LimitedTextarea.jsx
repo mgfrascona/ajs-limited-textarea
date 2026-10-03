@@ -21,8 +21,6 @@ const LimitedTextarea = () => {
     const handleTextChange = ({ target }) => {
         const { value } = target
         value.length <= maxLength ? setText(value) : setText(text)
-
-        value.length > maxLength(`You have exceeded the maximum character limit of ${maxLength}.`)
     }
 
     return (
